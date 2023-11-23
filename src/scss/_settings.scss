@@ -1,0 +1,156 @@
+@use 'variables' as var;
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var.$secondaryColorIce;
+    
+    &__subhead{
+        padding-bottom: 1rem;
+    }
+
+    &__switch {
+
+
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+
+        /* Hide default HTML checkbox */
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        input:checked + .settings__slider {
+
+            background-color: var.$primaryColorSage;
+
+            &:before {
+                transform: translateX(26px);
+            }
+        }
+
+        input:focus + .settings__slider {
+            box-shadow: var.$primaryShadow;
+        }
+    }
+
+    /* The slider */
+    &__slider {
+
+
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        background-color: #ccc;
+
+        transition: 0.4s;
+
+        &:before {
+
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+
+            box-shadow: var.$primaryShadow;
+
+            background-color: white;
+            transition: 0.4s;
+        }
+    }
+
+
+
+    /* Rounded sliders */
+    &__sliderRound {
+
+
+
+        border-radius: 34px;
+
+        &:before {
+            border-radius: 50%;
+        }
+
+    }
+
+
+
+    &__container {
+        padding-top: 30px;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    &__manage {
+        color: var.$primaryColorSage;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &__whitebox {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+        width: 90%;
+    }
+
+    &__category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0px 0 40px 0;
+
+        span {
+            color: var.$primaryColorDrab;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+.primaryFooter h2 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.darkmode {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    &__button {
+
+        background-color: #f0f3f4;
+        color: #000000;
+        padding: 10px;
+        border-radius: 30px;
+        margin: 0.5rem
+    }
+}

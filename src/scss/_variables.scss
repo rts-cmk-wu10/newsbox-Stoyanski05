@@ -1,0 +1,44 @@
+//FONT
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+// Colors for boxes
+$primaryColorSage: #87BCBF;
+$primaryColorRust: #D97D54;
+$primaryColorDrab: #324755;
+$primaryColorDanger: #D95454;
+
+// Typography Colors
+$typoColorsOnyx: #1B1C20;
+$typoColorsSlate:  #6E8CA0;
+$typoColorsSnow: #FFFFFF;
+
+// Colors for less usage
+$secondaryColorIce: #F0F3F4;
+$secondaryColorFossil: #C8D1D3;
+$secondaryColorSand: #B9B0A2;
+
+// FONTS
+$primaryFont: 'verdana';
+$primaryHeading: 30px;
+
+$secondaryHeading: 24pt;
+
+$sectionHeader: 18pt;
+
+$subTitle: 18pt;
+
+$cardTitle: 15pt;
+$cardCopySmall: 15pt;
+$cardSubtitle: 10pt;
+
+$bodyCopySmall: 14pt;
+
+$messageTimeStamp: 12pt;
+
+$buttonLabelDark: 14pt;
+$buttonLabelLight: 14px;
+
+// Shadow and spacing
+$primaryShadow: 0 0 16px 3px $secondaryColorFossil;
+
+$headlineSpacing: 1rem; 

@@ -1,0 +1,43 @@
+@use 'variables' as var;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sofia&display=swap');* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: "Open Sans";
+}
+
+.darkmode__page {
+    header{
+        background-color: var.$typoColorsOnyx;
+    }
+    main{
+        background-color: var.$primaryColorDrab;
+    }
+    .primaryHeader__title {
+        color: var.$primaryColorDrab;
+    }
+    .primaryHeader__settings, .primaryHeader__archive{
+        color: var.$primaryColorDrab;
+    }
+    .primaryHeader__search, .primaryHeader__label{
+        background-color: var.$primaryColorDrab;
+    }
+    
+    .category__logo{
+        box-shadow: 0 0 30px 3px black;
+    }
+    .settings__whitebox{
+        background-color: var.$secondaryColorFossil;
+    }
+    .darkmode__button{
+        background-color: rgba(0, 0, 0, 0.648);
+        color: var.$typoColorsSlate;
+        border-style: none;
+
+    }
+    .category__summary h2, .category__headline{
+        color: var.$typoColorsSlate;
+    }
+
+
+}
