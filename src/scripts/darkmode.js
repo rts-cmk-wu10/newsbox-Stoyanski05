@@ -2,7 +2,7 @@ export default(function(){
     if (localStorage.getItem("darkmode") === "true"){
         document.body.classList.add("darkmode__page")
     }
-    if (!window.location.pathname.includes("settings.html")) return
+    if (!window.location.pathname.includes("settings")) return
 
     const CTA_BUTTON = document.querySelector(".darkmode__button") //CTA = CALL TO ACTION
 

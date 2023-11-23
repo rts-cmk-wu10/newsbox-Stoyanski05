@@ -1,5 +1,5 @@
 (function () {
-    if (!window.location.pathname.includes("index.html")) return
+    if (window.location.pathname !== "/") return
 
     const categories = [
         "arts",
